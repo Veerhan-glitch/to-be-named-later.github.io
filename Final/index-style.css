@@ -207,4 +207,10 @@ button:hover {
 }
 
 
+button.light, .element.light, .container.light {
+    background-color: lightgray;
+}
 
+button.dark, .element.dark, .container.dark{
+    background-color: darkgray;
+}
