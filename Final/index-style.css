@@ -207,10 +207,10 @@ button:hover {
 }
 
 
-button.light, .element.light, .container.light {
+button.light, .element.light, .submit-container.light {
     background-color: lightgray;
 }
 
-button.dark, .element.dark, .container.dark{
+button.dark, .element.dark .submit-container.dark{
     background-color: darkgray;
 }
