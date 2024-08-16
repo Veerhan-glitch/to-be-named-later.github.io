@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    background: #ffffff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px; 
+    text-align: center; 
+    transition: background 0.3s, color 0.3s; 
+}
+
+/* theme togler */
+
+.theme-container {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    z-index: 2; 
+    display: flex; 
+    align-items: center; 
+}
+
+#theme-toggle {
+    width: 60px; 
+    height: 30px; 
+    background-color: #ccc; 
+    border-radius: 30px; 
+    position: relative; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: flex; 
+    align-items: center; 
+}
+
+.moon {
+    font-size: 24px; 
+    margin: 0 5px; 
+}
+
+/* theme user name and phone num */
+iframe {
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+    overflow: hidden; 
+}
+
+.name-fields {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+    position: relative; 
+    align-items: center; 
+}
+
+.name-fields .tooltiptext {
+    visibility: hidden;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: calc(100% + 5px);
+    margin-left: 10px;
+    min-width: 150px;
+    max-width: 400px;
+    white-space: normal; 
+}
+
+.name-fields .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.name-fields:hover .tooltiptext {
+    visibility: visible;
+}
+
+.input-field {
+    width: 300px; 
+    border: 1px solid #ccc; 
+    padding: 12px; 
+    border-radius: 6px; 
+    text-align: center; 
+    font-size: 1em; 
+    transition: border-color 0.3s; 
+    margin-right: 10px; 
+}
+
+input[readonly] {
+    cursor: pointer; 
+    background-color: #f9f9f9; 
+}
+
+.input-field:focus {
+    border-color: #4CAF50; 
+    outline: none; 
+}
+
+/* submit */
+
+
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 6px; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+.submit-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.submit-button {
+    padding: 10px 25px; 
+    font-size: 18px; 
+    background-color: #007BFF; 
+    border-radius: 6px; 
+    border: none; 
+    color: white; 
+    transition: background-color 0.3s; 
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.modal.show {
+    display: block; 
+    opacity: 1; 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; 
+    padding: 20px; 
+    width: 600px; 
+    height: 600px; 
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+

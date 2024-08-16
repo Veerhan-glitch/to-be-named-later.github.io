@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Whac-A-Name</title>
+        <link rel="stylesheet" href="wak-a-name-style.css" />
+        <script src="wak-a-name-script.js" defer></script>
+    </head>
+    <body>
+        <div id="title">
+            Play Whac-A-Mole with the letters in your name!<br /><br />
+            Click on ⌫ to remove the last added letter, <br />
+            ⎵ to add a space, <br />
+            when you're ready to submit, click on ⏎. <br /><br />
+            Clicking on the unlit game area may randomly add a letter, remove
+            the last letter, or add a space, so be careful not to!
+        </div>
+        <!-- 4x4 grid -->
+        <div id="grid">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div class="cell" data-index="9"></div>
+            <div class="cell" data-index="10"></div>
+            <div class="cell" data-index="11"></div>
+            <div class="cell" data-index="12"></div>
+            <div class="cell" data-index="13"></div>
+            <div class="cell" data-index="14"></div>
+            <div class="cell" data-index="15"></div>
+        </div>
+        <div class="utility">
+            <button class="button" onclick="backspace()">⌫</button>
+            <button class="button" onclick="enter()">⏎</button>
+            <button class="button" id="space-button" onclick="space()">⎵</button>
+        </div>
+        <button class="button" id="start-button" onclick="startGame()">
+            Start
+        </button>
+    </body>
+</html>
