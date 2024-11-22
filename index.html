@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/Final/index-style.css">
+    <script type="text/javascript" src="/Final/index-script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        
+        <div class="name-fields" id="element">
+            <span id="toggle-btn">🌙</span>
+            <span class="info-i">🛈</span>
+            <span class="tooltiptext">Click on 🌙 to be able to change each elements them individually, click on it agin to get the click functionality back</span>
+        </div>
+        <h3 class = 'element'>User Name</h3>
+        <div class="name-fields" id="element">
+            <input type="text" id="user-name" class="input-field" placeholder="User Name" readonly />
+            <span class="info-i">🛈</span>
+            <span class="tooltiptext">Click on the input box to enter name with our cutting-edge process in version 2.3.1!</span>
+        </div>
+
+        <h3 class = 'element'>Phone Number</h3>
+        <div class="name-fields">
+            <input type="text" id="phone-number" class="input-field" placeholder="Enter phone number in words" /> 
+            <span class="info-i">🛈</span>
+            <span class="tooltiptext">Type your phone number in words (e.g., 'double nine one two three') for clearer communication!</span>
+        </div>
+
+        <div class="submit-container">
+            <button class="submit-button" id="submit-button">Submit</button>
+        </div>
+    </div>
+
+    <div id="user-name-game" class="modal">
+        <div class="modal-content">
+            <iframe id="user-name-game-frame" src="/Final/wak-a-name.html" scrolling="no"></iframe>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
